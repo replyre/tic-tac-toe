@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+}
+.gamecontainer{
+    /* background-color: yellow; */
+    height: 80vh;
+    width: 80vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    flex-direction: column;
+
+}
+.container{
+    margin:20px;
+    /* background-color: aqua; */
+    display: grid;
+    /* gap:1rem; */
+    position:relative;
+    grid-template-rows: repeat(3, 10vw );
+    grid-template-columns: repeat(3, 10vw);
+}
+.line{
+    background-color: black;
+    height:5px;
+    width:0vw;
+    background-color: brown;
+    border-radius: 10px;
+    position:absolute;
+  /* for middle: transform: translateY(15vw) rotate(90deg) ; */
+    visibility: hidden;
+    transition: width 1s ease-in-out;
+
+
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    text-align: center;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gameinfo{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.info{
+    font-size:26px;
+}
+
+.box:hover{
+    background-color: rgb(214, 255, 255);
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+     
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* align-items: center; */
+    justify-self: center;
+    padding:5px;
+    background-color:aliceblue;
+    border: 3px solid black;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    
+}
+
+#reset:hover{
+    background-color: black;
+    color:whitesmoke;
+}
+
+@media screen and (max-width:800px) {
+    
+}
